@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>regular Expression</title>
+</head>
+
+<body>
+<form onsubmit="return regx1()" action="message.html">
+<input id="inp1" class="cls1" type="text" placeholder="Username" />
+<label id="lbl1" style="color:#FF0000;visibility:hidden">Invalid Username</label><br><br>
+<button type="submit" onclick="regx1()" id="btn1">Submit</button>
+</form>
+<script type="text/javascript">
+function regx1()
+{
+var username=document.getElementById("inp1").value;
+var regx=/[5-9][a-z A-z]{8}[^1-9]/;
+if(regx.test(username))
+{
+alert("valid username");
+
+return true;
+}
+else
+{
+document.getElementById("lbl1").style.visibility="visible";
+return false;
+}
+}
+
+</script>
+
+
+</body>
+</html>

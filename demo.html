@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>simple demo</title>
+</head>
+
+<body>
+<input id="id1" class="cls1" placeholder="Value1" />
+<input id="id2" class="cls1" placeholder="Value1" />
+<button type="button" onclick="addsum()" id="btn1" class="cls1">ADD</button>
+<h1 id="id3">The Result is=</h1>
+<script type="text/javascript">
+function addsum()
+{
+var first = document.getElementById("id1").value;
+var second = document.getElementById("id2").value;
+document.getElementById("id3").innerHTML="Result is "+(first + second)
+
+}
+</script>
+
+</body>
+</html>

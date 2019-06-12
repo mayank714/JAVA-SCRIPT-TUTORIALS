@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<h1 id="par1"> Basic program to on off the bulb</h1	>	
+
+<h1 id="part2">This is going to hide</h1>	
+
+<h1 id="part3" style="display:none">This is going to display</h1>	
+
+<button onclick="blbon()" id="blb1">Turn on the buld</button>
+<img id="bulbon" src="light-bulboff.png" style="width:100px" />
+<button onclick="blboff()" id="blb2" style="text-align:center">Turn off the buld</button><br /> <br />
+<button type="button" id="btn2" onclick="changetxtsize()">Click me to enlarge the text</button>
+<br/>
+<button type="button" id="btn2" onclick="textwillhide()">Click me to hide the text</button>
+<br/>
+<button type="button" id="btn2" onclick="textwilldisplay()">Click me to display the text</button>
+
+
+<script type="text/javascript">
+alert('Welcome to my program')
+//first function to on the bulb
+function blbon()
+{
+document.getElementById('bulbon').src='on.jpg';
+}
+
+//second function to convert it to off
+
+function blboff()
+{
+document.getElementById('bulbon').src='light-bulboff.png' ;
+} 
+
+//to change the font size of an para or headline
+function changetxtsize()
+{
+document.getElementById('par1').style.fontSize='50px';
+
+}
+//to hide the paragraph
+function textwillhide()
+{
+document.getElementById('part2').style.display='none';
+
+}
+//to display the content
+function textwilldisplay()
+{
+document.getElementById('part3').style.display='block';
+
+}
+</script>
+
+
+</body>
+</html>

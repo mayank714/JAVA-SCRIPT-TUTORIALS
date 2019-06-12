@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>selectbox in java script</title>
+<script type="text/javascript">
+   function fn1()
+ {
+ var select = document.getElementById("selectbox");
+ alert("You have selected : "+select.options[select.selectedIndex].value);
+ 
+ }
+</script>
+</head>
+
+<body>
+<select  id="selectbox">
+<option value="The lol Engineers">The lol Engineers</option>
+<option value="Amit Bhadana">Amit Bhadana</option>
+<option value="HArsh Beniwal">HArsh Beniwal</option>
+<option value="Ashish Chanchlani">Ashish Chanchlani</option>
+<option value="Round2hell">Round2hell</option>
+<option value="HrZero8">HrZero8</option>
+<option value="TVF">TVF</option>
+</select><br><br>
+<button id="btn1" onclick="fn1()">SUBMIT</button>
+ 
+ 
+ 
+</body>
+</html>

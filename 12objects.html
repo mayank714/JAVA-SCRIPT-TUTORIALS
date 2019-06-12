@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Objects in JS</title>
+<script type="text/javascript">
+/*
+var employee={
+employee_name : "Raja",
+employee_age : 25,
+employee_salary: 25000,
+
+ employeedetails : function()
+ {
+ return 'The employee works on an company'
+ }
+}
+document.write("<h1>" +employee.employeedetails()+ "</h1>");
+/*we can  write document. write outside or vice versa . Currently we have written document. write outside  and return inside, if we write it 
+inside then at outside we write employee.employeedetails()*/
+
+function employee(age,salary,position)
+{
+this.age = age;
+this.salary = salary;
+this.position = position;
+this.employeedetails = function()
+{
+document.write("<h1> The details are full</h1>");
+
+}
+
+}
+
+var e1 =new employee (25,35000,"Manager");
+var e2 =new employee (55,55000,"owner");
+e1.employeedetails();
+e2.employeedetails();
+document.write("<h1>" +e2.age);
+document.write("<h1>" +e2.salary);
+document.write("<h1>" +e2.position);
+document.write("<h1>" +e2.age);
+</script></head>
+
+<body>
+</body>
+</html>
